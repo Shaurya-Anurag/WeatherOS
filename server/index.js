@@ -8,7 +8,7 @@ import { DatabaseSync } from 'node:sqlite';
 
 const app = express();
 const PORT = Number(process.env.PORT || 4000);
-const HOST = process.env.HOST || '127.0.0.1';
+const HOST = process.env.HOST || '0.0.0.0';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, 'data');
 
